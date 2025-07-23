@@ -1,7 +1,7 @@
 clear all
 clc
 
-% Load multiple datasets from different CSV log files
+% Load multiple datasets from different CSV log files, please insert your path
 data_all = {
     readmatrix('tracking_log_AL.csv'); ...
     readmatrix('tracking_log_FSFL.csv'); ...
@@ -34,7 +34,7 @@ end
 plot_project(results)
 
 %%
-% Load arm tracking data from CSV file
+% Load arm tracking data from CSV file, please insert your path
 arm_data = readmatrix('tracking_log_arm.csv');
 
 % Extract relevant data from arm dataset
