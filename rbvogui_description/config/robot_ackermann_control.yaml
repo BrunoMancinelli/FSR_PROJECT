@@ -1,0 +1,86 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    use_sim_time: true
+    controllers:
+      - joint_state_broadcaster
+      - velocity_controller
+      - steering_controller
+      - ur5_arm_controller
+      - ur5_arm_trajectory_controller
+      - ur5_arm_velocity_controller
+
+    ur5_arm_controller:
+      type: position_controllers/JointGroupPositionController
+      
+    ur5_arm_velocity_controller:
+      type: velocity_controllers/JointGroupVelocityController
+      
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+      
+    steering_controller:
+      type: ackermann_steering_controller/AckermannSteeringController
+        
+
+ur5_arm_controller:
+  ros__parameters:
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    joints:
+      - arm_shoulder_pan_joint
+      - arm_shoulder_lift_joint
+      - arm_elbow_joint
+      - arm_wrist_1_joint
+      - arm_wrist_2_joint
+      - arm_wrist_3_joint
+
+    state_publish_rate: 200.0
+    action_monitor_rate: 20.0 
+    
+ur5_arm_velocity_controller:
+  ros__parameters:
+    command_interfaces:
+      - velocity
+    state_interfaces:
+      - velocity
+    joints:
+      - arm_shoulder_pan_joint
+      - arm_shoulder_lift_joint
+      - arm_elbow_joint
+      - arm_wrist_1_joint
+      - arm_wrist_2_joint
+      - arm_wrist_3_joint
+    state_publish_rate: 200.0 # Defaults to 50
+    action_monitor_rate: 20.0 # Defaults to 20
+    
+   
+steering_controller:
+  ros__parameters:
+    front_steering: true
+    in_chained_mode: false
+    position_feedback: false
+    # if position_feedback is false then HW_IF_VELOCITY is taken as interface type, if position_feedback is true then HW_IF_POSITION is taken as interface type
+    use_stamped_vel: false
+    rear_wheels_names:
+      - robot_back_right_wheel_joint
+      - robot_back_left_wheel_joint
+    front_wheels_names:
+      - robot_front_left_motor_wheel_joint
+      - robot_front_right_motor_wheel_joint  
+    odom_frame_id: "odom"
+    base_frame_id: "robot_base_footprint"
+    wheelbase: 1.0
+    front_wheels_radius: 0.110
+    rear_wheels_radius: 0.110
+    front_wheel_track: 0.47
+    rear_wheel_track: 0.47
+    state_publish_rate: 100.0
+    action_monitor_rate: 20.0
+    
+    
+    
+  
