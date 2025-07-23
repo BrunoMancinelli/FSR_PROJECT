@@ -1,6 +1,6 @@
 # FSR_PROJECT
 
-For optimal compatibility and ease of use, it is strongly advised to utilize the Dockerfile contained in this repository(ros2_docker_scripts-fortress folder) when running the different files of this project.
+For optimal compatibility and ease of use, it is strongly advised to utilize the Dockerfile contained in this repository when running the different files of this project.
 
 To start, open a termina and build the packages by running:
 
