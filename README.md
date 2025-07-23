@@ -47,7 +47,7 @@ After that, you can launch the controllers.
 The default controller is based on **approximate linearization**.
 The default SLAM mode is **mapping**, and the default trajectory is **cubic**.
 
-WARNING: The table containing the data for the MATLAB plots will be saved in the folder from which the launch is executed.
+WARNING: The table containing the data for the MATLAB plots will be saved in the folder from which the launch is executed. The MATLAB plotting script is provided as an attachment.
 
 To launch the system with default parameters:
 
