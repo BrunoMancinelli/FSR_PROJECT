@@ -1,0 +1,38 @@
+digraph G {
+"odom" -> "robot_base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 83.537\nBuffer length: 4.908\nMost recent transform: 26.172\nOldest transform: 21.264\n"];
+"map" -> "odom"[label=" Broadcaster: default_authority\nAverage rate: 11.02\nBuffer length: 4.9\nMost recent transform: 26.6\nOldest transform: 21.7\n"];
+"robot_base_footprint" -> "robot_base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot_base_link" -> "laser_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot_chassis_link" -> "arm_base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot_base_link" -> "robot_chassis_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"arm_base_link" -> "arm_base"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"arm_base_link" -> "arm_base_link_inertia"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"arm_flange" -> "arm_tool0"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"arm_wrist_3_link" -> "arm_flange"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"arm_wrist_2_link" -> "arm_wrist_3_link"[label=" Broadcaster: default_authority\nAverage rate: 20.202\nBuffer length: 3.96\nMost recent transform: 26.16\nOldest transform: 22.2\n"];
+"arm_wrist_3_link" -> "arm_ft_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot_base_link" -> "lidar_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot_base_link" -> "robot_back_left_fixed_wheel"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot_base_link" -> "robot_back_right_fixed_wheel"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot_chassis_link" -> "robot_base_logos_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot_chassis_link" -> "robot_battery_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"arm_tool0" -> "robot_camera_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot_camera_link" -> "robot_camera_link_optical"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot_chassis_link" -> "robot_contactors_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot_chassis_link" -> "robot_leds_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"arm_upper_arm_link" -> "arm_forearm_link"[label=" Broadcaster: default_authority\nAverage rate: 20.202\nBuffer length: 3.96\nMost recent transform: 26.16\nOldest transform: 22.2\n"];
+"arm_shoulder_link" -> "arm_upper_arm_link"[label=" Broadcaster: default_authority\nAverage rate: 20.202\nBuffer length: 3.96\nMost recent transform: 26.16\nOldest transform: 22.2\n"];
+"arm_base_link_inertia" -> "arm_shoulder_link"[label=" Broadcaster: default_authority\nAverage rate: 20.202\nBuffer length: 3.96\nMost recent transform: 26.16\nOldest transform: 22.2\n"];
+"arm_forearm_link" -> "arm_wrist_1_link"[label=" Broadcaster: default_authority\nAverage rate: 20.202\nBuffer length: 3.96\nMost recent transform: 26.16\nOldest transform: 22.2\n"];
+"arm_wrist_1_link" -> "arm_wrist_2_link"[label=" Broadcaster: default_authority\nAverage rate: 20.202\nBuffer length: 3.96\nMost recent transform: 26.16\nOldest transform: 22.2\n"];
+"robot_back_left_fixed_wheel" -> "robot_back_left_wheel"[label=" Broadcaster: default_authority\nAverage rate: 20.202\nBuffer length: 3.96\nMost recent transform: 26.16\nOldest transform: 22.2\n"];
+"robot_back_right_fixed_wheel" -> "robot_back_right_wheel"[label=" Broadcaster: default_authority\nAverage rate: 20.202\nBuffer length: 3.96\nMost recent transform: 26.16\nOldest transform: 22.2\n"];
+"robot_base_link" -> "robot_front_left_motor_wheel"[label=" Broadcaster: default_authority\nAverage rate: 20.202\nBuffer length: 3.96\nMost recent transform: 26.16\nOldest transform: 22.2\n"];
+"robot_front_left_motor_wheel" -> "robot_front_left_wheel"[label=" Broadcaster: default_authority\nAverage rate: 10.256\nBuffer length: 3.9\nMost recent transform: 26.1\nOldest transform: 22.2\n"];
+"robot_base_link" -> "robot_front_right_motor_wheel"[label=" Broadcaster: default_authority\nAverage rate: 20.202\nBuffer length: 3.96\nMost recent transform: 26.16\nOldest transform: 22.2\n"];
+"robot_front_right_motor_wheel" -> "robot_front_right_wheel"[label=" Broadcaster: default_authority\nAverage rate: 10.256\nBuffer length: 3.9\nMost recent transform: 26.1\nOldest transform: 22.2\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1752427128.886325"[ shape=plaintext ] ;
+}->"map";
+}
