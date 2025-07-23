@@ -595,7 +595,7 @@ private:
             else if (command_interface_ == "IO_linearization"){
             
                 // Gains and parameter delta for input-output linearization
-                delta = 20;
+                delta = 0.2;
                 k1 = 0.2; 
                 k2 = 0.15;
                 
