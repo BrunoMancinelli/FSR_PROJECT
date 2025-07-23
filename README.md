@@ -31,6 +31,10 @@ To run the planner for the **circular trajectory**, use:
     $ cd ~/ros2_ws/src/planner/src
     $ python3 planner_circ.py
 
+Then, return to the workspace "home" directory
+
+    $ cd ../../../
+
 So, build the packages again by running:
 
     $ colcon build
@@ -42,6 +46,8 @@ Then, source the environment:
 After that, you can launch the controllers.    
 The default controller is based on **approximate linearization**.
 The default SLAM mode is **mapping**, and the default trajectory is **cubic**.
+
+WARNING: The table containing the data for the MATLAB plots will be saved in the folder from which the launch is executed.
 
 To launch the system with default parameters:
 
