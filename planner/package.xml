@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>planner</name>
+  <version>0.0.1</version>
+  <description>Pacchetto per tracking di traiettorie con modello bicycle</description>
+
+  <maintainer email="tuo@email.com">Tuo Nome</maintainer>
+  <license>BSD</license>
+
+  <!-- Build tool -->
+  
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  
+  
+  <depend>controller_manager_msgs</depend>
+
+
+  <depend>orocos_kdl</depend>
+  <depend>kdl_parser</depend>
+  <depend>cv_bridge</depend>
+  <depend>OpenCV</depend>
+  <depend>aruco</depend>
+  <depend>image_transport</depend>
+  <depend>ros2_kdl_package</depend>
+  <depend>ros2_opencv</depend>
+   
+  <build_depend>rclcpp</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>ament_cmake_python</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_depend>tf2_geometry_msgs</build_depend>
+  <build_depend>tf2_ros</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>eigen3_cmake_module</build_depend>
+  
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>tf2</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <build_depend>eigen4_cmake_module</build_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+ 
+
+</package>
