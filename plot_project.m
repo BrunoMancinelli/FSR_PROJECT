@@ -19,7 +19,6 @@ function plot_ex2(results)
 
         % Title
         title('Path of the bicycle');
-        %title('Trajectory of point P', 'Interpreter', 'latex')
         
         % Legend
         legend([p1, p2], {'Desired'; 'Real'});
