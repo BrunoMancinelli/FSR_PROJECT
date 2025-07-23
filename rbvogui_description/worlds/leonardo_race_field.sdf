@@ -54,7 +54,7 @@
 
      <include>
       <name>arucotag</name>
-      <pose> 3.0 2.0 1.0 1.57 0.0 0.0</pose>
+      <pose> 3.0 2.0 1.0 1.57 3.14 0.0</pose>
       <uri>model://arucotag</uri>
     </include>
 
