@@ -291,8 +291,6 @@ private:
 
         // Extract arm joint positions and velocities for the KDL robot model
         for (size_t kdl_idx = 0; kdl_idx < kdl_joint_names.size(); ++kdl_idx) {
-            joint_positions_(kdl_idx) = 0.0;
-            joint_velocities_(kdl_idx) = 0.0;
             for (size_t i = 0; i < msg->name.size(); ++i) {
                 if (msg->name[i] == kdl_joint_names[kdl_idx]) {
 	            if (msg->position[i] != 0)
