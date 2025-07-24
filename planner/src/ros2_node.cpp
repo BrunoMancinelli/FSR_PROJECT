@@ -295,7 +295,8 @@ private:
             joint_velocities_(kdl_idx) = 0.0;
             for (size_t i = 0; i < msg->name.size(); ++i) {
                 if (msg->name[i] == kdl_joint_names[kdl_idx]) {
-                    joint_positions_(kdl_idx) = msg->position[i];
+	            if (msg->position[i] != 0)
+			joint_positions_(kdl_idx) = msg->position[i];	    
                     if (msg->velocity.size() > i)
                         joint_velocities_(kdl_idx) = msg->velocity[i];
                     break;
