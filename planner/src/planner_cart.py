@@ -151,3 +151,4 @@ df = pd.DataFrame({
     "dddot_yd": dddot_yd_filt   
 })
 
+df.to_csv("trajectory_cart.csv", index=False)
